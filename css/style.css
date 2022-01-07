@@ -1,0 +1,886 @@
+/* FONTS
+font-family : 'Encode Sans SC', sans-serif; 
+	Regular : 400;
+	Medium : 500;
+	Semibold : 600;
+	extra-Bold 800;
+font-family : 'Mukta', sans-serif;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	font-family: 'Mukta', sans-serif;
+}
+/* =====================================Début class usuelles=============================================*/
+.col-1, .col-2, .col-2-5, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+	float: left;
+	padding: 0 10px;
+}
+.col-1{
+	width: 8.33333333%;
+}
+.col-2{
+	width: 16.6666666%;
+}
+.col-2-5{
+	width: 20%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.3333333%;
+}
+.col-5{
+	width: 41.6666666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.3333333%;
+}
+.col-8{
+	width: 66.6666666%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.3333333%;
+}
+.col-11{
+	width: 91.66666666%;
+}
+.col-12{
+	width: 100%;
+}
+.offset-1{
+	margin-left: 8.3333333333%;
+}
+.offset-2{
+	margin-left: 16.6666666%;
+}
+.offset-3{
+	margin-left: 25%;
+}
+.offset-4{
+	margin-left: 33.33333%;
+}
+.offset-5{
+	margin-left: 41.666666%;
+}
+.offset-6{
+	margin-left: 50%;
+}
+.row, .clear{
+	clear: both;
+	border: none;
+}
+img, video{
+	max-width: 100%;
+}
+:root{
+	--rouge: #a72727;;
+	--blanc: #fef8f7;
+	--noir: #1e1e1f;
+	--gris: #bfbfbf;
+}
+body{
+	width: 100%;
+	background: var(--noir);
+}
+.container {
+	max-width: 1300px;
+	padding : 0 auto;
+}
+/* GROSSE FLECHE */
+
+.grosse_fleche{
+	width: 100%;
+	height: 100px !important;
+}
+/* FIN GROSSE FLECHE */
+
+/* NAV */
+#menu{
+	position: relative;
+	text-align: center;
+	height: 60px;
+	background-color: var(--blanc);
+	transition: 0.5s;
+}
+#menu ul{
+	height: 60px;
+}
+#menu li{
+	display: inline-block;
+}
+#menu li a{
+	color : var(--rouge) ;
+	font-size : 20px;
+	font-family: 'Encode Sans SC', sans-serif;
+	font-weight: 500;
+	padding : 0 40px;
+	line-height: 60px;
+	height: 60px;
+	transition : 0.4s;
+	letter-spacing: 3px;
+}
+
+#menu li a:hover{
+	color : var(--rouge);
+	text-decoration: none;
+	opacity : 0.4;
+}
+#menu li a:focus{
+	text-decoration: none;
+	color : var(--rouge);
+}
+/*FIN NAV */
+
+
+/* TOP HOME */
+
+#home, #curriculum_vitae{
+	background-color: var(--blanc);
+	text-align: center;
+	min-height: 800px;
+	height: 93vh;
+	width: 100%;
+	position: relative;
+}
+#home img, #curriculum_vitae img{
+	z-index: 4;
+	transition : 0.5s;
+}
+#home .portrait-simon{
+	position: relative;
+	z-index: 150;
+}
+#home .scroll-anim{
+	padding-top :60px;
+}
+#home .scroll-anim2, #curriculum_vitae .scroll-anim2{
+	padding-left :60px;
+}
+#home .scroll-anim3, #curriculum_vitae .scroll-anim3{
+	padding-right: 40px;
+}
+#home h1, #curriculum_vitae h1{
+	font-family: 'Encode Sans SC', sans-serif;
+	font-weight: 800;
+	color : var(--rouge);
+	font-size: 60px;
+	letter-spacing: 15px;
+}
+#home h2, #curriculum_vitae h2{
+	font-family: 'Encode Sans SC', sans-serif;
+	font-weight: 700;
+	color : var(--noir);
+	font-size: 30px;
+	letter-spacing: 15px;
+}
+.texte_fleche, #curriculum_vitae h3{
+	font-variant: small-caps;
+	font-size: 25px;
+	color : var(--rouge);
+	letter-spacing: 5px;
+}
+#home .fleche_bas, #curriculum_vitae .fleche_bas{
+	margin-top: 0;
+	height: 15px;
+	transition : transform .4s;
+}
+#home .fleche_bas:hover, #curriculum_vitae .fleche_bas:hover{
+	transform: scale(1.5);
+}
+
+.fleche_suivant{
+	position: absolute;
+	z-index: 150;
+	bottom: 0;
+	left : 50%;
+	transform : translate(-50%, -50%);
+}
+.picto_dev{
+	opacity: 0.3;
+	position: absolute;
+	left: -250px;
+	top : 15%;
+}
+.picto_code{
+	opacity: 0.6;
+	position: absolute;
+	left: 0;
+	top : 0;
+}
+.picto_code_mobile{
+	display: none;
+	opacity: 0.6;
+	position: absolute;
+	left: 0;
+	top : 0;
+}
+.picto_loupe{
+	opacity: 0.3;
+	position: absolute;
+	left: -100px;
+	top : 5%;
+}
+.picto_plume{
+	opacity: 0.3;
+	position: absolute;
+	right: 0;
+	top: 9%;
+}
+.picto_diplomes{
+	opacity: 0.3;
+	position: absolute;
+	right: 0;
+	top: 5%;
+}
+/* FIN TOP HOME*/
+
+/* QUI SUIS JE*/
+#qui-suis-je .texte_qui-suis-je p{
+	padding-bottom: 20px;	
+}
+.texte_qui-suis-je{
+	padding-bottom: 60px;
+}
+#qui-suis-je{
+	background: var(--rouge);
+	text-align: center;
+	position: relative;
+}
+#qui-suis-je h2{
+	font-family: 'Encode Sans SC', sans-serif;
+	color : var(--blanc);
+	font-weight: 800;
+	font-size: 55px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	letter-spacing: 10px;
+}
+#qui-suis-je p{
+	color : var(--blanc);
+	line-height: 44px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-bottom: 80px;
+}
+#competences .container img{
+	height: 80px;
+	width: 80px;
+}
+#competences p{
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+/* FIN QUI SUIS JE*/
+
+/* EXPERIENCES */
+#competences .h2_cv{
+	font-family: 'Mukta', sans-serif;
+	border-bottom: 1px solid var(--gris);
+	color : var(--gris);
+	letter-spacing: 10px;
+	font-size: 55px;
+	padding-bottom: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-top: 0;
+	margin-bottom: 40px;
+	margin-top: 80px;
+}
+#competences .comp img{
+	padding-bottom: 10px;
+}
+#competences .experiences p{
+	text-align: left;
+}
+#competences .experiences .date{
+	text-align: center;
+	font-size: 30px;
+	color: var(--rouge);
+	line-height: 35px;
+	font-weight: 300;
+}
+#competences .experiences .titre_cv{
+	font-size: 27px;
+	color: var(--rouge);
+	line-height: 35px;
+	font-family: 'Encode Sans SC', sans-serif;
+	font-weight: 700;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#competences .experiences .sous-titre_cv{
+	color :var(--gris);
+	font-variant: small-caps;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+#competences .experiences .texte_cv{
+	font-weight: 300;
+	line-height: 30px;
+	
+}
+#competences .experiences span.ville{
+	font-size: 22px;
+	text-transform: uppercase !important;
+}
+.margin-top{
+	margin-top: 30px;
+}
+/* FIN EXPERIENCES*/
+
+/* FORMATION */
+
+.formation_bg_rouge{
+	height: 100%;
+	width: 100%;
+	background-color: var(--rouge);
+	border-radius: 8px;
+	padding-top: 25px;
+	margin-bottom: 25px;
+}
+#competences .experiences .formation_bg_rouge p{
+	color : var(--blanc);
+}
+
+/* FIN FORMATION */
+
+/* PORTFOLIO */
+.padding-bottom{
+	padding-bottom: 80px;
+}
+#portfolio, #competences{
+	text-align: center;
+	background: var(--blanc);
+	position: relative;
+}
+#portfolio h2, #competences h2{
+	font-family: 'Encode Sans SC', sans-serif;
+	color : var(--rouge);
+	font-weight: 800;
+	font-size: 55px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	letter-spacing: 10px;
+}
+#portfolio p, #competences p{
+	color : var(--noir);
+	line-height: 44px;
+	font-size: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 2px;
+}
+#portfolio .crea h3{
+	border-bottom: 1px solid var(--gris);
+	color : var(--gris);
+	letter-spacing: 10px;
+	font-size: 55px;
+	padding-bottom: 15px;
+}
+#portfolio .folio{
+	position: relative;
+	padding : 2px;
+}
+#portfolio .portfolio_img{
+	display: inline-block;
+	margin-bottom: 80px;
+}
+
+#portfolio .folio img{
+
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.1);
+	opacity: 1;
+	transition : 0.4s;
+}
+#competences img{
+	transition : 0.4s;
+}
+#portfolio .folio a:hover img, #competences .container img:hover{
+	opacity : 0.4;
+}
+/******* Ligthtbox ********/
+.fancybox-captio-wrap{
+	background: linear-gradient(180deg,transparent 0,rgba(135, 43, 41, 0.1) 20%,rgba(135, 43, 41, 0.2) 40%,rgba(135, 43, 41, 0.6) 80%,rgba(135, 43, 41, 0.8));
+}
+.fancybox-caption-wrap .fancybox-caption{
+	font-family: 'Encode Sans SC', sans-serif;
+	font-variant: small-caps;
+	font-weight: 600;
+	text-align: left;
+	color: var(--blanc);
+	font-size: 20px;
+	border : none;
+	padding-bottom: 100px;
+	text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);}
+.fancybox-image{
+	border-radius: 4px;
+}
+
+.fancybox-arrow--left::after, .fancybox-arrow--right::after{
+	border-radius: 30px;
+}
+.fancybox-button{
+	border-radius: 30px;
+	margin-right: 10px;
+	margin-top : 10px;
+	background: var(--noir);
+	color :var(--blanc);
+}
+/* FIN PORTFOLIO */
+
+/* SOFT SKILLS*/
+
+#qui-suis-je .soft-skills{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color : var(--blanc);
+	opacity : 0.6;
+}
+
+/* FIN SOFT SKLLS */
+
+/* CONTACT */
+#competences .container img.petit{
+	height: 45px;
+	width: 45px;
+}
+#contact{
+	text-align: center;
+	background: var(--rouge);
+}
+
+#contact h2{
+	font-family: 'Encode Sans SC', sans-serif;
+	color : var(--blanc);
+	font-weight: 800;
+	font-size: 55px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	letter-spacing: 10px;
+}
+#contact p{
+	color : var(--blanc);
+	line-height: 44px;
+	font-size: 20px;
+	padding-bottom: 40px;
+	letter-spacing: 2px;
+}
+#contact .block-linkedin{
+	height: 100%;
+	padding-bottom: 40px;
+
+}
+#contact .block-linkedin p{
+	display: inline-block;
+	font-size: 30px;
+}
+.block-linkedin a{
+	border-radius: 40px !important;
+	background-color: var(--blanc);
+	padding: 10px 20px;
+	padding-bottom: 14px;
+	font-size: 30px;
+	font-family: 'Encode Sans SC', sans-serif;
+	font-variant: small-caps;
+	font-weight: 600;
+	border-radius: 2px solid var(--blanc);
+	color: var(--rouge);
+	transition: 0.4s;
+	margin: 0 10px;
+	text-decoration: none;
+	border: 1px solid var(--blanc);
+}
+.block-linkedin a:hover{
+	border-radius: 40px !important;
+	background-color: var(--rouge);
+	border-radius: 2px solid var(--blanc);
+	color: var(--blanc);
+	text-decoration: none;
+	border: 1px solid var(--blanc);
+}
+
+/* FIN CONTACT*/
+
+/* FOOTER */
+
+footer{
+	background: var(--noir);
+	text-align: center;
+}
+footer p{
+	color : var(--blanc);
+	line-height: 44px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 40px 0;
+}
+/* FIN FOOTER*/
+
+/* MENU MOBILE */
+.burger-menu{
+	display : none;
+}
+.menu-mobile{
+	display: none;
+	position: fixed;
+	width: 80%;
+	top : 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background: rgba(167, 39, 39, 0.96);	
+}
+.burger-menu, .close-menu{
+	background:var(--blanc);
+	height: 40px;
+	width: 40px;
+	line-height: 65px;
+	text-align: center;
+	border-radius: 50px;
+	z-index: 900;
+	position : fixed;
+	top : 20px;
+	right: 30px;
+	color : var(--blanc);
+}
+.burger-menu img{
+	margin-bottom: 28px;
+	width: 20px;
+	height: 20px;
+}
+.close-menu img{
+	margin-bottom: 23px;
+	width: 20px;
+	height: 20px;
+}
+.burger-menu:hover, .close-menu:hover{
+	color : var(--noir);
+}
+.close-menu{
+	z-index: 250;
+	line-height: 62px;
+}
+#menu-mobile ul{
+	margin: 80px 0 0 0;
+	padding-right: 30px;
+	list-style-type: none;
+	text-align: right;
+}
+#menu-mobile ul li{
+	margin-left: 25px;
+	border-bottom : 1px solid rgba(254, 248, 247, 0.5);
+}
+#menu-mobile ul li a{
+	font-family: 'Encode Sans SC', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color : var(--blanc);
+	text-decoration: none;
+	line-height: 80px;
+	transition : 0.2s;
+	letter-spacing: 5px;
+}
+#menu-mobile ul a:hover{
+	opacity : 0.7;
+}
+/* FIN MENU MOBILE */
+
+/******** MOBILE ******/
+@media all and ( max-width: 1500px ){
+	.picto_dev{
+		width: 500px;
+		left: -50px;
+	}
+	.picto_plume{
+		width: 450px;
+	}
+}
+@media all and ( max-width: 1280px ){
+	#home .portrait-simon, #curriculum_vitae .portrait-simon{
+		width: 350px;
+	}
+	#home .fleche_suivant, #curriculum_vitae .fleche_suivant{
+		bottom : 120px;
+	}
+}
+@media all and ( max-width: 1100px ){
+	.col-3{
+		width: 50%;
+	}
+	#qui-suis-je .soft-skills{
+		font-size: 30px;
+		padding-bottom: 20px;
+	}
+	#portfolio .folio img{
+		filter:grayscale(0);
+	}
+	#menu-mobile ul a{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-weight: 900;
+		font-size: 50px;
+		color : var(--rouge);
+		text-decoration: none;
+		text-shadow: 0px 0px 13px rgba(30, 30, 31, 0.22);
+		line-height: 120px;
+		transition : 0.2s;
+	}
+	.burger-menu{
+		display : inline-block;
+	}
+	#menu{
+		display: none;
+	}
+	.picto_plume, .picto_dev, .picto_loupe, .picto_diplomes{
+		display: none;
+	}
+	#home .portrait-simon, #curriculum_vitae .portrait-simon{
+		max-height: 450px;
+		margin-top: 10px;
+	}
+	#home h1{
+		font-size: 60px;
+		letter-spacing: 15px;
+	}
+	#curriculum_vitae h1{
+		font-size: 40px;
+		letter-spacing: 15px;
+	}
+	#home h2, #curriculum_vitae h2{
+		font-size: 30px;
+		letter-spacing: 10px;
+	}
+	#home .fleche_suivant{
+		bottom : 8%;
+	}
+	#qui-suis-je h2, #portfolio h2, #contact h2{
+		font-size: 50px;
+		letter-spacing: 15px;
+	}
+	#qui-suis-je p, #portfolio p, #contact p{
+		font-size: 22px;
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	#portfolio .crea h3{
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+	#portfolio .folio{
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	#portfolio .folio a{
+		opacity: 1;
+	}
+	#portfolio .portfolio_img{
+		margin: 20px;
+	}
+	.fancybox-caption-wrap .fancybox-caption{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-variant: small-caps;
+		font-weight: 600;
+		text-align: center;
+		color: var(--blanc);
+		font-size: 25px;
+		line-height: 30px;
+		border : none;
+		padding-bottom: 100px;
+	}
+	.bouton_mail{
+		display: inline-block;
+		background-color: var(--blanc);
+		padding : 10px 20px;
+		border-radius: 60px;
+		border : 1px solid var(--blanc);
+	}
+	.bouton_mail a{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-weight: 800;
+		font-size: 25px;
+		color : var(--rouge);
+		text-decoration: none;
+		padding : 11px 20px;
+	}
+}
+@media all and ( max-width: 767px ){
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.crea, #qui-suis-je .container, #competences .container{
+		padding : 0 21px;
+	}
+	#competences .experiences .titre_cv, #competences .experiences  .sous-titre_cv,#competences .experiences  .texte_cv{
+		text-align: center;
+	}
+	#competences .experiences .titre_cv{
+		font-size: 25px;
+	}
+	#competences .experiences  .sous-titre_cv, #competences .experiences  .texte_cv{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	#competences .experiences span.ville{
+		font-size: 20px;
+	}
+	#competences .experiences .date{
+		padding-bottom: 0;
+		padding-top: 25px;
+	}
+	#competences .comp p{
+		margin-bottom: 20px;
+	}
+	.formation_bg_rouge{
+		padding-bottom: 25px;
+		padding-top : 0;
+	}
+	.br{
+		display: none;
+	}
+	.col-4, .col-2, .col-3, .col-10{
+		width: 100%;
+	}
+	.block-linkedin a{
+		padding: 10px 20px;
+		padding-bottom: 14px;
+		font-size: 30px;
+	}
+	.contact-mobile{
+		display: inline-block;
+		width: 100%;
+	}
+	a.contact-mobile{
+		margin : 10px 0;
+		width: 70%;
+	}
+	#menu-mobile ul a{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-weight: 900;
+		font-size: 30px;
+		color : var(--rouge);
+		text-decoration: none;
+		text-shadow: 0px 0px 13px rgba(30, 30, 31, 0.22);
+		line-height: 80px;
+		transition : 0.2s;
+	}
+	.burger-menu{
+		display : inline-block;
+	}
+	#menu{
+		display: none;
+	}
+	.picto_plume, .picto_dev{
+		display: none;
+	}
+	.picto_code{
+		display: none;
+	}
+	.picto_code_mobile{
+		display: block;
+		opacity: 0.3;
+	}
+	#home .portrait-simon, #curriculum_vitae .portrait-simon{
+		margin-top: 10px;
+		max-height: 450px;
+		z-index: 150 !important;
+	}
+	#home h1, #curriculum_vitae h1{
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+	#home h2, #curriculum_vitae h2{
+		font-size: 18px;
+		letter-spacing: 3px;
+	}
+	#curriculum_vitae .container_home h3{
+		font-size: 18px;
+		letter-spacing: 3px;
+	}
+	#home .fleche_suivant, #curriculum_vitae .fleche_suivant{
+		bottom : 15%;
+	}
+	#qui-suis-je h2, #portfolio h2, #contact h2, #competences .container h2{
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+	#qui-suis-je p, #portfolio p, #contact p, #competences p{
+		font-size: 18px;
+		letter-spacing: 3px;
+		line-height: 30px;
+	}
+	#portfolio .crea h3{
+		font-size: 40px;
+		letter-spacing: 15px;
+	}
+	#portfolio .folio{
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	#portfolio .folio a{
+		opacity: 1;
+	}
+	#portfolio .portfolio_img{
+		margin: 20px;
+	}
+	.fancybox-caption-wrap .fancybox-caption{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-variant: small-caps;
+		font-weight: 600;
+		text-align: center;
+		color: var(--blanc);
+		font-size: 25px;
+		line-height: 30px;
+		border : none;
+		padding-bottom: 100px;
+	}
+	.bouton_mail{
+		display: inline-block;
+		background-color: var(--blanc);
+		padding : 10px 20px;
+		border-radius: 60px;
+		border : 1px solid var(--blanc);
+	}
+	.bouton_mail a{
+		font-family: 'Encode Sans SC', sans-serif;
+		font-weight: 800;
+		font-size: 25px;
+		color : var(--rouge);
+		text-decoration: none;
+		padding : 11px 20px;
+		background-color: none;
+		border: none;
+	}
+}
+
+/** SCROLL TOP **/
+
+.scrollToTop{
+	z-index: 200;
+    width:60px; 
+    height:60px; 
+    text-align:center; 
+    text-decoration: none;
+    position:fixed;
+    bottom : 60px;
+    right:40px;
+    display:none;
+	transition: 0.4s;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+	opacity: 0.6;
+}
